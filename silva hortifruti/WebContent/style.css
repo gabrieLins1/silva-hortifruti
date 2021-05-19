@@ -1,0 +1,266 @@
+/**
+*folha de estilo do site http e css3
+* @gabreil da silva lins
+*/
+
+
+/*           importe            *********/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*            padronosar      *************/
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+  body{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+  }
+  img {
+    max-width: 100%;
+    height: auto; 
+ }
+
+
+ /*      centraliza o layout ************/
+
+ .layout{
+     
+     margin: 0 auto;
+     max-width: 1140px;
+ }
+
+ /*              flex               */
+
+.flex{
+    display: flex;
+}
+header{
+  background-color: #32CD32;
+    height: 140px;
+}
+
+
+#logo{
+    float: left;
+    
+}
+#logo img{
+    border-radius:110px;
+    margin-top: 20px;
+   margin-left: 230px;
+}
+nav{
+    
+    float: right;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+#link{
+    float: right;
+    margin-top: 40px;
+}
+#link a{
+    
+    text-decoration:none ;
+    color: #32CD32;
+    background-color: #ffffff;
+    padding: 10px 40px 10px 40px;
+    font-weight: 700;
+    border-radius:25px ;
+    
+
+    
+
+}
+nav ul{
+    list-style: none;
+    background-color: blue;
+    color: #ffffff;
+    background-color: #32CD32;
+    padding: 10px 40px 10px 40px;
+    font-weight: 700;
+    border-radius:25px ;
+    font-size: 1.1em;
+}
+nav ul li{
+    float: left;
+    padding-left: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+nav ul li a:hover {
+    color:#7CFC00;
+}
+main{
+    background: url(imagens/essa.png);
+    height: 400px;
+    background-size: cover;/*ajusta a img ao tamanho da tela*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+main h1{
+    color: #32CD32;
+    font-size: 7em;
+    /*criar uma sombra no texto*/
+    text-shadow: #ffffff 0.05em 0.05em 0.05em;
+}
+
+/*                   sobre                   */
+#sobre{
+    
+    padding: 50px 0px 50px 0px;
+    background: url(imagens/vf.png);
+    background-size:cover ;
+    background-attachment: fixed;
+
+
+}
+#sobre img{
+    border-radius:75px ;
+}
+#texto{
+    flex: 70%;
+    color: #000000;
+    padding:40px;
+    text-shadow: #ffffff 0.05em 0.05em 0.05em;
+
+}
+#fototx{
+   
+    flex: 30%;
+    text-shadow: #ffffff 0.05em 0.05em 0.05em;
+
+}
+#temos{
+    
+    background-attachment: fixed;
+    padding: 50px 0px 50px 0px;
+    background: url(imagens/vf.png);
+    background-size:cover ;
+    background-attachment: fixed;
+
+}
+#hortiimg{
+    
+    flex: 70%;
+    margin: 0px 50px 0px 0px;
+}
+
+#hortitx{
+    padding: 15px;
+   
+    flex: 30%;
+    color: #000000;
+    text-shadow: #ffffff 0.05em 0.05em 0.05em;
+
+}
+#hortitx p{
+   padding: 20px;
+}
+#venha{
+    padding: 50px 0px 50px 0px;
+    background: url(imagens/vf.png);
+    background-size:cover ;
+    background-attachment: fixed;
+    text-shadow: #ffffff 0.05em 0.05em 0.05em;
+
+}
+#veimg{
+    flex:70% ;
+}
+#avalieqr{
+    padding:80px;
+    flex: 30%;
+}
+#avalieqr h2{
+    padding: 0px 0px 40px 0px ;
+}
+
+#Contatos{
+    padding: 50px 0px 50px 0px;
+    
+   
+}
+/*foormulario              */
+#formulario{
+   
+    flex: 30%;
+}
+#formulario input[type=text]{
+    width: 90%;
+    border: 1px solid #32CD32;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px ;/*arredonnda os contatos*/
+}
+#formulario textarea{
+    width: 90%;
+ border: 1px solid #32CD32;
+ padding: 10px 0px 40px 10px;
+ margin-bottom:20px  ;
+ border-radius: 5px ;/*arredonnda os contatos*/
+ resize: none;/*bloquear o redisionamento*/
+}
+#formulario input[type=submit]{
+    color: #ffffff;
+    background-color: #32CD32;
+    padding: 10px 40px 10px 40px;
+    font-weight: 700;
+    border-radius:25px ;
+    font-size: 1.1em;
+}
+#formulario h2{
+    color: #32CD32;
+    margin-bottom: 15px;
+}
+
+#fone{
+    
+    padding-left: 30px;
+    flex: 15%;
+    margin-left:15px ;
+   
+}
+#fone p{
+    margin-bottom: 20px;
+}
+
+
+#mapa{
+   
+    flex: 30%;
+}
+
+/*                    rodape                  */ 
+
+footer{
+    background-color: black;
+    height: 90px;
+    
+}
+#rodape{
+    
+    float: left;
+}
+#rodape p{
+    color:#ffffff;
+    margin-top: 40px;
+    float: left;
+}
+#social{
+    float: right;
+    margin-top: 27px;
+}
+    
+
+
+
+ 
