@@ -34,12 +34,12 @@ public class JavaBeans {
 	 * 
 	 * @return produto
 	 */
-	public String getProdutos() {
+	public String getProduto() {
 		return produto;
 	}
 
-	public void setProdutos(String produtos) {
-		this.produto = produtos;
+	public void setProduto(String produto) {
+		this.produto = produto;
 	}
 
 	/**
@@ -112,10 +112,10 @@ public class JavaBeans {
 	 * @param datapd
 	 * @param validade
 	 */
-	public JavaBeans(String id, String produtos, String quantidade, String valor, String datapd, String validade) {
+	public JavaBeans(String id, String produto, String quantidade, String valor, String datapd, String validade) {
 		super();
 		this.id = id;
-		this.produto = produtos;
+		this.produto = produto;
 		this.quantidade = quantidade;
 		this.valor = valor;
 		this.datapd = datapd;
