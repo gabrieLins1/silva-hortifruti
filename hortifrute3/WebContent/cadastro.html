@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>cadastro</title>
+
+<link rel="icon" href="imagens/fa.jpg">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<header>
+	<div id="layout">
+		<div id='logo'>
+			<img src="imagens/menu.png" alt="logotipo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">sobre</a></li>
+				<li><a href="#">contato</a></li>
+				<li><a href="#">reds</a></li>
+			</ul>
+		</nav>
+		<div id=link>
+			<a href="addestoque.jsp" target="blank">Estoque</a>
+		</div>
+
+	</div>
+</header>
+<body>
+	<h1>Cadastro Produto</h1>
+
+	<!-- criando um formulario -->
+	<!-- insert e o nome que sera resebido pelo servlet para encaminhamento dos dados do formulario -->
+	<form name="frmestoque" action="insert">
+		<table>
+			<tr>
+				<td><input type="text" name="produtos" placeholder="Produtos"
+					class="caixa"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="quantidade"
+					placeholder="Quantidade" class="caixa2"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="valor" placeholder="Valor"
+					class="caixa"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="datapd" placeholder="Datapd"
+					class="caixa"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="validade" placeholder="Validade"
+					class="caixa"></td>
+			</tr>
+		</table>
+
+		<!-- onclick executa um açao no formulario no caso executar a funçao 
+            validar() do documento javascript ligado a este documento -->
+		<input type="button" value="Adicionar" class="Botao1"
+			onclick="validar()">
+
+	</form>
+	<!-- ligaçao com o documento valida.js -->
+	<script src="valida.js"></script>
+
+	<footer>
+		<div class="layout">
+			<div id="rodape">
+				<p>₢2021 LinsHotiFruti</p>
+			</div>
+			<div id=social>
+				<a href=" https://www.facebook.com" target="_blank"> <img
+					src="imagens/face.png" alt="fecebook"></a> <a
+					href=" http://www.instagram.com" target="_blank"> <img
+					src="imagens/instagram.png" alt="instagram."></a> <a
+					href=" http://www.twitter.com" target="_blank"> <img
+					src="imagens/twitter.png" alt="twitter."></a> <a
+					href=" http://www.youtube.com" target="_blank"> <img
+					src="imagens/youtube.png" alt="youtube."></a>
+			</div>
+
+		</div>
+	</footer>
+
+</body>
+</html>
